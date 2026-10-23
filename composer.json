@@ -2,7 +2,7 @@
     "name": "anchorcms/anchor-cms",
     "description": "Anchor is a free, lightweight, faster-than-a-bullet, simple blogging system, made for art–directed posts.",
     "type": "cms",
-    "version": "0.12.8",
+    "version": "0.13.0",
     "keywords": ["CMS", "anchor", "anchorcms"],
     "license": "GPL-3.0",
     "authors": [
