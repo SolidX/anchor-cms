@@ -25,15 +25,14 @@ class error
      * This will catch the php native error and treat it as a exception
      * which will provide a full back trace on all errors
      *
-     * @param string $code
-     * @param string $message
-     * @param string $file
-     * @param int    $line
-     * @param array  $context
+     * @param string $code The first parameter, errno, will be passed the level of the error raised, as an integer. 
+     * @param string $message The second parameter, errstr, will be passed the error message, as a string. 
+     * @param string $file If the callback accepts a third parameter, errfile, it will be passed the filename that the error was raised in, as a string. 
+     * @param int    $line If the callback accepts a fourth parameter, errline, it will be passed the line number where the error was raised, as an integer. 
      *
      * @throws \ErrorException
      */
-    public static function native($code, $message, $file, $line, $context)
+    public static function native($code, $message, $file, $line)
     {
         if ($code & error_reporting()) {
             static::exception(new ErrorException($message, $code, 0, $file, $line));

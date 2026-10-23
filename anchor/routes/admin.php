@@ -92,7 +92,7 @@ Route::post('admin/login', [
         }
 
         // check for updates
-        Update::version();
+        //Update::version(); //Disabled because Anchor is no longer maintained
 
         if (version_compare(Config::get('meta.update_version'), VERSION, '>')) {
             return Response::redirect('admin/upgrade');
