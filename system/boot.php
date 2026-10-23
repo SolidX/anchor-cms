@@ -10,8 +10,8 @@
  */
 
 // Check php version
-if (version_compare(PHP_VERSION, '5.6') < 0) {
-    echo 'We need PHP 5.6 or higher, you are running ' . PHP_VERSION;
+if (version_compare(PHP_VERSION, '8.2') < 0) {
+    echo 'We need PHP 8.2 or higher, you are running ' . PHP_VERSION;
     exit;
 }
 
